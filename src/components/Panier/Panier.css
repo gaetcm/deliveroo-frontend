@@ -1,4 +1,5 @@
 .panier {
+  display: flex;
   width: 30%;
 }
 
@@ -6,4 +7,22 @@
   width: 350px;
   border-radius: 5px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 11px;
+  margin-top: 30px;
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
+  height: fit-content;
+}
+
+button {
+  margin-top: 7px;
+  width: 335px;
+  height: 50px;
+  background-color: #bac3c3;
+  border-radius: 10px;
+  border: none;
+  color: #8b9a9b;
+  font-size: 18px;
 }

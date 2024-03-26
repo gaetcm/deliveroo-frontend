@@ -1,14 +1,17 @@
 import "./Content.css";
+import Panier from "../Panier/Panier";
 
 const Content = ({ data }) => {
   return (
     <main>
       <div className="container">
         <div className="content">
+          {data.categories.splice(5, 6)}
           {data.categories.map((elem, index) => {
             return (
               <>
                 <h2 key={index}>{elem.name}</h2>
+
                 <div className="recette1">
                   {elem.meals.map((e, i) => {
                     return (
@@ -30,7 +33,9 @@ const Content = ({ data }) => {
             );
           })}
         </div>
-        <div className="panier">panier</div>
+        <div className="panier">
+          <Panier />
+        </div>
       </div>
     </main>
   );
