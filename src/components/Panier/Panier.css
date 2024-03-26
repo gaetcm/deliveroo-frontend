@@ -1,9 +1,13 @@
 .panier {
+  position: relative;
   display: flex;
   width: 30%;
 }
 
 .contentpanier {
+  padding-top: 7px;
+  position: sticky;
+  top: 10px;
   width: 350px;
   border-radius: 5px;
   background-color: white;
@@ -17,7 +21,6 @@
 }
 
 button {
-  margin-top: 7px;
   width: 335px;
   height: 50px;
   background-color: #bac3c3;
@@ -25,4 +28,36 @@ button {
   border: none;
   color: #8b9a9b;
   font-size: 18px;
+}
+
+.cart {
+  background-color: #00cdbd;
+  color: white;
+}
+
+.item {
+  margin: 20px 0;
+  padding: 0 10px;
+  width: 300px;
+  height: 60px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bouttonpanier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid #00cdbd;
+  color: #00cdbd;
+}
+
+.bouttonpanier:hover {
+  cursor: pointer;
 }

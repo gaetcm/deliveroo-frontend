@@ -11,6 +11,7 @@ function App() {
 
   const fetchData = async () => {
     try {
+      setIsLoading(true);
       const response = await axios.get("http://localhost:3200/");
       setData(response.data);
       setIsLoading(false);
@@ -33,7 +34,7 @@ function App() {
         src={data.restaurant.picture}
         p={data.restaurant.description}
       />
-      <Content data={data} />
+      <Content data={data} setData={setData} />
     </>
   );
 }

@@ -7,16 +7,16 @@
   justify-content: space-between;
   display: flex;
   flex-direction: row;
+  align-content: center;
   flex-wrap: wrap;
 }
 
 .recette2 {
   width: 400px;
-  height: 160px;
+  height: 150px;
   background-color: white;
   border-radius: 5px;
   display: flex;
-  align-items: center;
   padding: 10px;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -33,10 +33,7 @@
   width: 130px;
   height: 130px;
   border-radius: 5px;
-}
-
-.recettetext {
-  width: 50%;
+  margin-left: 15px;
 }
 
 h2 {
@@ -48,7 +45,7 @@ h2 {
 }
 
 .recette2 p {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #808484;
   margin-bottom: 16px;
   display: -webkit-box;
@@ -59,4 +56,29 @@ h2 {
 
 .recette2 h3 {
   margin-bottom: 8px;
+  font-size: 17px;
+  color: #2e3333;
+  margin-bottom: 10px;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popular {
+  font-size: 14px;
+  color: #ff8000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.pricetag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
