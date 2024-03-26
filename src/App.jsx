@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import Content from "./components/Content/Content";
 import Pic from "./assets/imgs/images/logo-teal.svg";
 import axios from "axios";
 
 function App() {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchData = async () => {
@@ -32,13 +33,7 @@ function App() {
         src={data.restaurant.picture}
         p={data.restaurant.description}
       />
-
-      <div>
-        {/* {data.map((elem, index) => {
-          return <h2 key={index}>{elem.categories}</h2>;
-        })} */}
-        {console.log(data)}
-      </div>
+      <Content data={data} />
     </>
   );
 }
